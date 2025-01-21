@@ -9,7 +9,10 @@ import SwiftUI
 
 struct headshotImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("headshot")
+            .resizable()
+            .frame(width: 200, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 5))
     }
 }
 
