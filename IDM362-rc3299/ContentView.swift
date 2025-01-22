@@ -31,6 +31,7 @@ struct ContentView: View {
             ColorPicker("Choose a color!", selection: $colorPicked)
             Button(action: {
                 backgroundColor = colorPicked
+                print(backgroundColor)
             }){
                 Text("Button to change text color")
                     .padding()
