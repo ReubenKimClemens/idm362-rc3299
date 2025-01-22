@@ -8,39 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var backgroundColor = Color.black
-    
+    @State private var squareColor = Color.black
     @State private var colorPicked = Color.black
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        VStack {
-            Text("IDM362 - HW01")
+        VStack(alignment: .center) {
+            Text("IDM362 - hwk01")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
                 .padding()
             
             headshotImage()
-            Text("My headshot")
+            Text("Headshot")
                 .font(.title2)
+                .padding(.bottom, 25.0)
             
-            
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                .padding(.horizontal, 11.0)
-            
-
-            ColorPicker("Choose a color!", selection: $colorPicked)
-            Button(action: {
-                backgroundColor = colorPicked
-                print(backgroundColor)
-            }){
-                Text("Button to change text color")
-                    .padding()
-                    .foregroundColor(Color .white)
-                    .background(.black)
-                    .cornerRadius(10.0)
+            VStack(alignment: .center) {
+                
+                if colorScheme == .dark {
+                    Rectangle()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(squareColor)
+                        .border(Color.white, width: 3)
+                }
+                else {
+                    Rectangle()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(squareColor)
+                        .border(Color.black, width: 3)
+                }
+                    
+                
+                ColorPicker("Choose a color!", selection: $colorPicked)
+                    .padding(.horizontal, 50.0)
+                Button(action: {
+                    squareColor = colorPicked
+                }){
+                    if colorScheme == .dark {
+                        Text("Button to change square color")
+                            .padding()
+                            .foregroundColor(Color .black)
+                            .background(.white)
+                            .cornerRadius(10.0)
+                    }
+                    else {
+                        Text("Button to change square color")
+                            .padding()
+                            .foregroundColor(Color .white)
+                            .background(.black)
+                            .cornerRadius(10.0)
+                    }
+                }
             }
+            .padding(.horizontal, 50.0)
         }
-            .foregroundColor(backgroundColor)
     }
 }
     
