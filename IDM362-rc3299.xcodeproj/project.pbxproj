@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F152FB012D37380A00F1B84C /* Build configuration list for PBXProject "IDM362-rc3299" */;
+			buildConfigurationList = F152FB012D37380A00F1B84C /* Build configuration list for PBXProject "idm362-rc3299" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F152FB012D37380A00F1B84C /* Build configuration list for PBXProject "IDM362-rc3299" */ = {
+		F152FB012D37380A00F1B84C /* Build configuration list for PBXProject "idm362-rc3299" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F152FB122D37380B00F1B84C /* Debug */,
