@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F152FB082D37380A00F1B84C /* IDM362-rc3299 */ = {
+		F152FB082D37380A00F1B84C /* idm362-rc3299 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "IDM362-rc3299";
+			path = "idm362-rc3299";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		F152FAFD2D37380A00F1B84C = {
 			isa = PBXGroup;
 			children = (
-				F152FB082D37380A00F1B84C /* IDM362-rc3299 */,
+				F152FB082D37380A00F1B84C /* idm362-rc3299 */,
 				F152FB072D37380A00F1B84C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F152FB082D37380A00F1B84C /* IDM362-rc3299 */,
+				F152FB082D37380A00F1B84C /* idm362-rc3299 */,
 			);
 			name = "IDM362-rc3299";
 			packageProductDependencies = (
