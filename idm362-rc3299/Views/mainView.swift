@@ -15,14 +15,14 @@ struct mainView: View {
                     Label("Home", systemImage: "house.fill")
                 }
             
-            historyView()
+            helpView()
                 .tabItem {
-                    Label("History", systemImage: "info.circle.fill")
+                    Label("Help", systemImage: "questionmark.circle.fill")
                 }
             
             profileView()
                 .tabItem {
-                    Label("Profile", systemImage: "gearshape.fill")
+                    Label("Profile", systemImage: "person.circle.fill")
                 }
         }
         .tint(Color("textColor"))

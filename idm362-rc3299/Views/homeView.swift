@@ -14,7 +14,6 @@ struct homeView: View {
                 Text("Path Plans")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .tint(Color("textColor"))
                     .position(x: 200, y:100)
                 NavigationLink(destination: eventTab()) {
                     ZStack {
@@ -129,7 +128,7 @@ struct homeView: View {
                 .position(x: 200, y: 618)
             }
             .frame(width: 402, height: 874)
-            .tint(Color("bgColor"))
+            .background(Color("bgColor"))
         }
     }
 }
