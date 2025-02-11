@@ -48,11 +48,11 @@ struct profileView: View {
                 Text("History")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .position(x: 200, y:530)
+                    .position(x: 200, y:555)
                 Rectangle()
                     .frame(width: 402, height: 1)
                     .background(Color("textColor"))
-                    .position(x: 200, y:560)
+                    .position(x: 200, y:585)
                 NavigationLink(destination: settingView()) {
                     ZStack {
                         Text("Friday Study")
@@ -87,7 +87,7 @@ struct profileView: View {
                 .background(Color("buttonColor"))
                 .cornerRadius(27)
                 .shadow(color: .white.opacity(0.2), radius: 1.5, x: 0, y: 4)
-                .position(x: 200, y: 650)
+                .position(x: 200, y: 675)
                 
                 NavigationLink(destination: joinTab()) {
                     ZStack {
@@ -122,7 +122,7 @@ struct profileView: View {
                 .background(Color("buttonColor"))
                 .cornerRadius(27)
                 .shadow(color: .white.opacity(0.2), radius: 1.5, x: 0, y: 4)
-                .position(x: 200, y: 820)
+                .position(x: 200, y: 845)
             }
             .frame(width: 402, height: 874)
             .background(Color("bgColor"))

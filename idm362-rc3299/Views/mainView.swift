@@ -14,16 +14,21 @@ struct mainView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color("bgColor"), for: .tabBar)
             helpView()
                 .tabItem {
                     Label("Help", systemImage: "questionmark.circle.fill")
                 }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color("bgColor"), for: .tabBar)
             
             profileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.circle.fill")
                 }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color("bgColor"), for: .tabBar)
         }
         .tint(Color("textColor"))
     }
